@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <title>The Cab</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Profile.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+	
+  body {font: 400 19px Century Gothic !important; line-height: 1.8; }
+  
+  .container-fluid {padding: 35px 50px; padding-bottom: 15px !important; }
+  
+  .navbar { margin-bottom: 0; background-color: #000000; z-index: 9999; border: 0; font-size: 14px !important; line-height: 1.5; letter-spacing: 5px; border-radius: 0; font-family: Century Gothic;}
+
+  .navbar li a, .navbar .navbar-brand {color: #FFFFFF !important;}
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {color: #F4511E !important; background-color: #FFFFFF !important; font-weight: bold !important;}
+	 
+  .navbar-default .navbar-toggle {border-color: transparent; color: #FFFFFF;}
+	  
+  h1 { font-size: 24px; color: #303030; font-weight: 600; margin-top: 75px; padding-top: 2% !important;}
+	  
+  h3 { padding-top:3% !important; padding-bottom: 3% !important; color:#737373 !important ;}	  
+		  
+  .form-inline .form-group {margin-left: 0; margin-right: 5px; }
+	
+    div#profilepic {padding-top: 5% !important;}
+	  
+	div#fileselect {padding-top: 6% !important;}  
+	  
+	div#btn {padding-top: 3% !important; padding-bottom: 4% !important;}
+	  
+ </style>
+ 
+ </head>
+
+<body id="page-top">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+  
+    <div class="navbar-header">
+       <a class="navbar-brand" href="#page-top">LOGO IMAGE</a>
+    </div>
+
+  <div class="nav navbar-nav  navbar-right">
+    <ul class="nav navbar-nav">
+          <li><a href="Home.html">About</a></li>
+          <li><a href="Home.html">Contact</a></li>
+   </ul>
+    <ul class="nav navbar-nav">
+      <li><a href="Main.php"><span class="glyphicon glyphicon-user"></span>  Cabs</a></li>
+      <li><a href="Home.html"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+    </ul>
+  </div>
+
+  </div>
+  
+</nav>
+	
+   <div class="container-fluid" id="editprofile">
+    <h1 class="text-center">Edit Profile</h1>
+  	<hr>
+     
+	   <h3 class="text-center"><b>Personal Information</b></h3> 
+      <div class="col-md-3" id="profilepic">
+       
+        <div class="text-center">
+          <img src="images\default_avatar_male.jpg" alt="avatar">
+            <div id="fileselect">     
+          <input type="file" class="form-control">
+            </div> 
+        </div>
+        
+      </div>
+      
+  
+      <div class="col-md-9">
+             
+        <form class="form-horizontal" method="post" action="Main.html">
+         
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First Name</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Mayank" readonly>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last Name</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Rustagi" readonly>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="emailidhere@gmail.com" readonly>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="password">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Mobile</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="9999999999">
+            </div>
+          </div>
+          
+          <div class="form-group">
+			  <label class="control-label col-lg-3">Date of Birth</label>
+           
+            <div class="form-inline">
+
+              <div class="form-group">
+                  <div class="col-lg-3"> 
+                  <input name="dd" class="form-control" value="01" readonly>
+				  </div>     
+              </div>
+
+              <div class="form-group">
+                  <div class="col-lg-3">
+				  <input name="mm" class="form-control" value="01" readonly> 
+				  </div>    
+              </div>
+
+              <div class="form-group" >
+                <div class="col-lg-3">
+                <input name="yyyy" class="form-control" value="1990" readonly>
+				  </div>    
+              </div>
+
+            </div>
+            </div>
+          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Fathers Mobile</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="9999999999">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Mothers Mobile</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="9999999999">
+            </div>
+          </div>
+          
+          <h3 class="text-center"><b>Address</b></h3>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Locality</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="House Number">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Street</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="Street Name/Appartments">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Area</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="Sector">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">State</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="Haryana" readonly>
+            </div>
+          </div>
+          
+          <h3 class="text-center"><b>Education</b></h3>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Primary School</label>
+            <div class="col-md-8">
+             <input class="form-control" type="text" value="School Name">
+            </div>
+          </div>
+             
+             <div class="form-group">
+             
+               <div class="form-inline">
+               
+               <div class="col-lg-12 text-center">
+
+              <div class="form-group">
+                   
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">From</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+                 
+              </div>
+              
+               <div class="form-group">
+              
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">To</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+				 </div> 
+                 
+              </div>
+
+				</div>   
+         
+			</div>         
+          
+           <div class="form-group">
+            <label class="col-md-3 control-label">Senior School</label>
+            <div class="col-md-8">
+             <input class="form-control" type="text" value="School Name">
+            </div>
+          </div>
+             
+             <div class="form-group">
+             
+               <div class="form-inline">
+               
+               <div class="col-lg-12 text-center">
+
+              <div class="form-group">
+                   
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">From</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+                 
+              </div>
+              
+               <div class="form-group">
+              
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">To</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+				 </div> 
+                 
+              </div>
+
+				</div>   
+         
+			</div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label">Bachelors Degree</label>
+            <div class="col-md-8">
+             <input class="form-control" type="text" value="University Name">
+            </div>
+          </div>
+             
+             <div class="form-group">
+             
+               <div class="form-inline">
+               
+               <div class="col-lg-12 text-center">
+
+              <div class="form-group">
+                   
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">From</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+                 
+              </div>
+              
+               <div class="form-group">
+              
+                  <select name="yyyy" class="form-control">
+
+                  <option value="0">To</option>
+                  <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option>
+                  <option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>      
+
+                  </select>
+				 </div> 
+                 
+              </div>
+
+				</div>   
+         
+			</div>  
+         
+          <div class="form-group">
+           
+            <div class="col-md-12 text-center" id="btn">
+              <input type="button" class="btn btn-success" value="Save Changes">
+              <input type="reset" class="btn btn-danger" value="Cancel">
+            </div>
+            
+          </div>
+          
+        </form>
+        
+      </div>
+     
+	</div>
+
+</body>
+
+
+</html>

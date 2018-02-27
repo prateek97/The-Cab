@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Profile Photo.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <style>
+
+   body {font: 400 17px Century Gothic; line-height: 1.8; }
+
+  .container-fluid {padding: 35px 50px; padding-bottom: 15px !important; }
+  
+  .navbar { margin-bottom: 0; background-color: #000000; z-index: 9999; border: 0; font-size: 14px !important; line-height: 1.5;
+      letter-spacing: 5px; border-radius: 0; font-family: Century Gothic;}
+
+  .navbar li a, .navbar .navbar-brand {color: #FFFFFF !important;}
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {color: #F4511E !important; background-color: #FFFFFF !important; font-weight: bold !important;}
+  .navbar-default .navbar-toggle {border-color: transparent; color: #FFFFFF;}
+
+   h1 { font-size: 24px; color: #303030; font-weight: 600; margin-top: 75px; padding-top: 2% !important;}
+
+   form {padding-top: 3% !important; }
+
+   #btn {padding-top: 2% !important; }
+
+  </style>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+       <a class="navbar-brand" href="Home.html">LOGO IMAGE</a>
+    </div>
+
+  <div class="nav navbar-nav  navbar-right">
+    <ul class="nav navbar-nav">
+      <li><a href="Login.html"><span class="glyphicon glyphicon-user"></span>   Login</a></li>
+    </ul>
+  </div>
+
+  </div>
+  
+ </nav>
+
+
+<div id="photo" class="container-fluid">
+
+        <h1 class="text-center">Profile Photo</h1>
+        <hr>
+
+<form class="form form-vertical" method="post" action="Edit Profile.html">
+
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <div class="kv-avatar center-block text-center" style="width:200px">
+                <div class="file-input">
+
+                <div class="file-preview ">
+        <div class="file-drop-disabled">
+
+<div class="file-preview-thumbnails">
+
+<div class="file-default-preview">
+   <img src="images\default_avatar_male.jpg" alt="Your Avatar" style="width:160px" > 
+</div>
+
+
+</div>
+
+    <div class="clearfix"></div>
+    <div class="file-preview-status text-center text-success"></div>
+    <div class="kv-fileinput-error"></div>
+
+    </div>
+
+</div>
+
+   <button type="button" class="btn btn-default" title="Add picture tags" onclick="alert('Call your custom code here.')">
+       <i class="glyphicon glyphicon-tag"></i>
+   </button> 
+
+   <button type="button" tabindex="500" title="Cancel or reset changes" class="btn btn-default fileinput-remove fileinput-remove-button">
+       <i class="glyphicon glyphicon-remove"></i> 
+  </button> <div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> 
+
+       <input id="avatar-1" name="avatar-1" type="file" class="" required="">
+
+</div>
+</div>
+              
+      <div class="help-block"><small>File Size &lt; 1500 KB</small></div>
+  
+    </div>
+  
+  </div>
+    </div>  
+
+          <div class="form-group">
+
+            <div class="text-center" id="btn"> 
+              <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+
+          </div>
+ 
+</form>
+
+<div id="kv-avatar-errors-1" class="center-block" style="width:800px;display:none"> </div>
+
+</div>
+
+
+<script>
+var btnCust = '<button type="button" class="btn btn-default" title="Add picture tags" ' + 
+    'onclick="alert(\'Call your custom code here.\')">' +
+    '<i class="glyphicon glyphicon-tag"></i>' +
+    '</button>'; 
+$("#avatar-1").fileinput({
+    overwriteInitial: true,
+    maxFileSize: 1500,
+    showClose: false,
+    showCaption: false,
+    browseLabel: '',
+    removeLabel: '',
+    browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
+    removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+    removeTitle: 'Cancel or reset changes',
+    elErrorContainer: '#kv-avatar-errors-1',
+    msgErrorClass: 'alert alert-block alert-danger',
+    defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar" style="width:160px">',
+    layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
+    allowedFileExtensions: ["jpg", "png", "gif"]
+});
+</script>
+
+</body>
+
+</html>

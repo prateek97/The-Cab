@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>The Cab</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <style>
+
+   body {font: 400 17px Century Gothic; line-height: 1.8; }
+
+  .container-fluid {padding: 35px 50px; padding-bottom: 15px !important; }
+  
+  .navbar { margin-bottom: 0; background-color: #000000; z-index: 9999; border: 0; font-size: 14px !important; line-height: 1.5;
+      letter-spacing: 5px; border-radius: 0; font-family: Century Gothic;}
+
+  .navbar li a, .navbar .navbar-brand {color: #FFFFFF !important;}
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {color: #F4511E !important; background-color: #FFFFFF !important; font-weight: bold !important;}
+  .navbar-default .navbar-toggle {border-color: transparent; color: #FFFFFF;}
+
+   h1 { font-size: 24px; color: #303030; font-weight: 600; margin-top: 75px; padding-top: 2% !important;}
+
+   form { padding-top: 5%; padding-left: 30% !important;}
+ 
+   .checkbox {padding-top: 20px !important; padding-left: 35px !important;}
+
+   #email, #password {width:30% !important;}
+
+   .input-group {margin-bottom: 10px;} 
+
+   footer {background-color:#000000 !important; margin: auto;}
+
+ </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-default navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+ 
+    <div class="navbar-header">
+       <a class="navbar-brand" href="Home.html">LOGO IMAGE</a>
+    </div>
+
+  <div class="nav navbar-nav  navbar-right">
+    <ul class="nav navbar-nav">
+      <li><a href="Sign Up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+  </div>
+
+  </div>
+
+ </nav>
+
+<div id="login" class="container-fluid">
+
+  <h1 class="text-center">Login</h1>
+  <hr>
+
+   <form class="form-horizontal" method="POST" action="Main.php">
+
+    <div class="col-sm-12">
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="email" type="text" class="form-control" placeholder="Email">
+    </div>
+
+    </div>
+
+    <div class="col-sm-12">
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" placeholder="Password">
+    </div>
+
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-10">
+        
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-xs-offset-1 col-sm-10">
+        <button type="submit" class="btn btn-primary" value="Login" onclick="login()">Login</button>
+      </div>
+     </div>
+      
+  </form>
+
+</div>
+
+
+
+</body>
+</html>

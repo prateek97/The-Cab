@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>The Cab</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {font: 400 17px Century Gothic; line-height: 1.8; }
+  
+  .jumbotron {background-color: #000000; color: #FFFFFF; padding: 80px 35px !important;  font-family: Century Gothic !important; margin-bottom:0px !important;  }
+  .container-fluid {padding: 35px 50px; padding-bottom: 15px !important; }
+  
+  .navbar { margin-bottom: 0; background-color: #000000; z-index: 9999; border: 0; font-size: 14px !important; line-height: 1.5;
+      letter-spacing: 5px; border-radius: 0; font-family: Century Gothic;}
+
+  .navbar li a, .navbar .navbar-brand {color: #FFFFFF !important;}
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {color: #F4511E !important; background-color: #FFFFFF !important; font-weight: bold !important;}
+  .navbar-default .navbar-toggle {border-color: transparent; color: #FFFFFF;}
+
+  .btn-danger {background-color: #F4511E; font-size: 15px; margin-top: 20px !important; margin-bottom: -5px !important;}
+
+   h2 { font-size: 25px; text-transform: uppercase; color: #303030; font-weight: 600; margin-bottom: 30px; }
+  
+  div#contact {background-color: #F6F6F6;}
+  div#about {padding-top:4%; padding-bottom:3%;}
+
+  .mailer { padding-left: 7px; }
+
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 60%;
+      height: 60%;
+      opacity: 0.7;
+  }
+  .person:hover { border-color:#CCCCCC; }
+
+ 
+  </style>
+
+</head>
+ 
+ <body id="page-top">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+    
+     <div class="navbar-header">
+      <a class="navbar-brand" href="#page-top">LOGO IMAGE</a>
+    </div>
+
+  <div class="nav navbar-nav  navbar-right">
+    <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+   </ul>
+    <ul class="nav navbar-nav">
+      <li><a href="Sign Up.html"><span class="glyphicon glyphicon-user"></span>  Sign Up</a></li>
+      <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+    </ul>
+  </div>
+
+  </div>
+  
+</nav>
+
+<div class="jumbotron text-center">
+   <br><br>
+  <h1>The Cab</h1> 
+  <p>We connect Students and Cabs</p> 
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" size="10" maxlength="6" placeholder="Pincode">
+       <button type="button" class="btn btn-danger" onclick>Check Availability</button>
+    </div>
+  </form>
+</div>
+
+<div id="about" class="container text-center">
+  <h2 class="text-center" style="padding-top:2%; padding-bottom:4%;">About Us</h2>
+
+  <div class="row">
+    <div class="col-sm-4">
+     
+      <a href="http://www.ncuindia.edu/about-us/faculty" data-toggle="collapse">
+        <img src="images\user-image.png" class="img-circle person" alt="faculty-image" width="255" height="255">
+      </a>
+
+       <p class="text-center"><strong>Name</strong></p><br>
+
+    </div>
+
+    <div class="col-sm-4">
+      
+      <a href="http://www.ncuindia.edu/about-us/faculty" data-toggle="collapse">
+        <img src="images\user-image.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+
+      <p class="text-center"><strong>Name</strong></p><br>
+      
+    </div>
+
+    <div class="col-sm-4">
+
+      <a href="http://www.ncuindia.edu/about-us/faculty" data-toggle="collapse">
+        <img src="images\user-image.png" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+
+       <p class="text-center"><strong>Name</strong></p><br>
+      
+    </div>
+
+  </div>
+</div>
+
+<div id="contact" class="container-fluid">
+
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>We shall get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Gurugram,Haryana </p>
+      <p><span class="glyphicon glyphicon-earphone"></span> +91 9999999999 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> emailidhere@gmail.com</p>
+    </div>
+   </div> <br>
+
+    <div class="col-sm-7 mailer">
+      <div class="row">
+        
+        <div class="col-sm-6 form-group">
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="col-sm-6 form-group">
+          <input  type="email" class="form-control" id="email" placeholder="Enter Email">
+        </div>
+
+      </div>
+
+      <textarea type="text" class="form-control" id="comments" placeholder="Comment Here" rows="12"></textarea><br>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default text-center" type="submit"> Send </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center" style="background-color:#000000;padding-bottom:5% !important;padding-top:3% !important;">
+  <h4 style="color:#FFFFFF;">Follow Us</h4>
+  <a class="w3-button w3-large w3-deep-orange" href="https://www.facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-deep-orange" href="https://www.twitter.com" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-deep-orange" href="https://www.plus.google.com" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-deep-orange" href="https://www.instagram.com" title="Google +"><i class="fa fa-instagram"></i></a>
+</footer>
+
+
+  </body>
+  </html>
+
+
+
+
+  
+
+ 
